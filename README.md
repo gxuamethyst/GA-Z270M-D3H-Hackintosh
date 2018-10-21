@@ -17,7 +17,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 ## BIOS
 
-* version F8b, you can download the latest version from [Gigabyte](https://www.gigabyte.com/Motherboard/GA-Z270M-D3H-rev-10#support-dl-bios).
+* version F8d, you can download the latest version from [Gigabyte](https://www.gigabyte.com/Motherboard/GA-Z270M-D3H-rev-10#support-dl-bios).
 * BIOS settings
 
 > 1. <u>Save & Exit</u> : *Load Optimized Defaults*
@@ -36,7 +36,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 ## Clover
 
-* version r4674, you can download the latest version from [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/).
+* version r4700, you can download the latest version from [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/).
 
 ## Kexts
 
@@ -46,7 +46,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 * [Lilu](https://github.com/acidanthera/Lilu/releases)
 * [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
-* [XHCI-200-series-injector](https://github.com/RehabMan/OS-X-USB-Inject-All/archive/master.zip)
+* [XHCI-unsupported](https://github.com/RehabMan/OS-X-USB-Inject-All/archive/master.zip)
 
 ## Others
 
