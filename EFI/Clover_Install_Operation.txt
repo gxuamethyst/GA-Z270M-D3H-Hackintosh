@@ -1,0 +1,57 @@
+
+Clover EFI installer log - Sat Jul  4 23:55:23 CST 2020
+Installer version: r5119 (commit: 0f5da727e) EFI bootloader
+
+1. 双击 "Clover_r5119.pkg" 之后, 显示 "介绍页", 点 "继续";
+
+2. "请先阅读" 页, 点 "继续";
+
+> Clover 是基于 Clover, rEFIt, XNU, VirtualBox 等不同项目的开放源码。 主要基于 EDK2 最新修正版。 
+> https://github.com/CloverHackyColor/CloverBootloader
+> 主要功能：
+> 	•	支持 引导 10.xx macOS, Windows EFI 及 Linux EFI
+> 	•	它是 EFI 引导器, 给操作系统提供 RuntimeServices (传统引导器无法提供)
+> 	•	默认 自动侦测大部份的硬件并设置所有属性 但是用户也可以在 config.plist 中修改
+> 	•	使用 Clover, 你可以从 启动磁盘 面板重启进入其他操作系统
+> 	•	写入 与操作系统相同的 UUID 到 config.plist
+> 	•	修正 SMBIOS 至 standard 2.6 版本
+> 	•	修正 ACPI 至 标准 4.0 版本。
+> 	•	支持从 启动分区 或 EFI文件夹 加载 DSDT
+> 	•	DSDT patching on the fly by fixes and by patterns
+> 	•	支持 可定制的 RestartFix 和 睡眠/唤醒 修复 并 支持 PCIRootUID 值
+> 	•	支持大部分 ATI, NVidia 及 Intel 显卡 的 属性注入, 并支持定制化参数设置。
+> 	•	支持 USB 及 USB 3.0 的修复 (LegacyOff, Ownership, Builtin, clock-id)
+> 	•	支持 HDA 及 以太网卡 属性内建功能
+> 	•	支持 开启 CPU turbo 及 自动生成 P-State 及 C-State 的功能
+> 	•	支持 ACPI 表单加载 (SSDT-xx, APIC, BOOT, SLIC, SLIT, SRAT, UEFI...)
+> 	•	支持 加载额外的 内核扩展
+> 	•	支持 必要情况下对 内核 及 内核扩展 的修正
+> 	•	支持 设置 NVRAM 变量来实现不同的需求
+> 	•	可按 F10 储存 图形界面 GUI 的截图，可设定默认启动区及定制化 GUI 图形界面
+> 	•	可按 F2 储存操作系统的日志 boot.log 及 GUI 的日志 preboot.log
+
+3. 第三项 "目的宗卷" 将会在第四项 "安装类型" 中选择;
+
+点 "更改安装位置...", 选 U 盘, 点 "继续";
+
+4. 点左边的 "自定" 修改自定义配置;
+
+勾选 "仅安装 UEFI 启动版本",
+勾选 "安装 Clover 到 ESP 系统分区";
+不勾选 "停用驱动";
+
+"UEFI 驱动, 64 位版本"下拉菜单中,
+  "推荐驱动"里的 AudioDxe, DataHubDxe, FsInject, SMCHelper 勾选;
+  "人机接口设备", 不勾选;
+  "文件系统驱动", 勾选 ApfsDriverLoader, VBoxHfs;
+  "内存修正驱动", 勾选 AptioMemoryFix;
+  "文件保险箱 UEFI 驱动, 64 位版本", 不勾选;
+  "更多驱动", 不勾选;
+
+不勾选 "安装 RC 脚本到目标宗卷";
+不勾选 "安装全部 RC 脚本到全部可启动的 OSX 宗卷";
+不勾选 "选择安装 RC 脚本";
+不勾选 "开机主题";
+不勾选 "安装 Clover 系统偏好设置面板";
+
+点击 "安装", 输入密码, 直到安装完成.
