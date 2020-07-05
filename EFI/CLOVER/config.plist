@@ -12,7 +12,17 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixShutdown_0004</key>
+				<key>AddMCHC</key>
+				<true/>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixShutdown</key>
+				<true/>
+				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -103,6 +113,20 @@
 					WEhDXw==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -112,6 +136,10 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -126,6 +154,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -138,27 +168,34 @@
 				<true/>
 				<key>PStates</key>
 				<true/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 kext-dev-mode=1</string>
-		<key>Debug</key>
-		<false/>
+		<string>dart=0 -v debug=0x100 keepsyms=1</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
+		<key>XMPDetection</key>
+		<string>YES</string>
+		<key>Debug</key>
+		<false/>
 		<key>DefaultVolume</key>
-		<string>Hackintosh</string>
+		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>Secure</key>
-		<false/>
 		<key>Timeout</key>
-		<integer>-1</integer>
-		<key>XMPDetection</key>
-		<string>Yes</string>
+		<integer>60</integer>
+	</dict>
+	<key>BootGraphics</key>
+	<dict>
+		<key>EFILoginHiDPI</key>
+		<integer>1</integer>
+		<key>UIScale</key>
+		<integer>1</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -182,6 +219,24 @@
 				</data>
 			</dict>
 		</array>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAASWQ==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+			</dict>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -201,29 +256,20 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Mouse</key>
-		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
-			<key>Enabled</key>
-			<false/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
-		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Windows</string>
+			<string>BOOTX64.EFI</string>
+		</array>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Circla</string>
+		<string>embedded</string>
+		<key>Timezone</key>
+		<integer>8</integer>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
-			<false/>
-		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -235,32 +281,31 @@
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
-		<true/>
-		<key>AsusAICPUPM</key>
-		<true/>
-		<key>Debug</key>
-		<false/>
-		<key>DellSMBIOSPatch</key>
-		<false/>
-		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
-		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
-		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>External Drives as Internal to fix Orange Icons</string>
-				<key>Disabled</key>
-				<false/>
+				<string>Patch_to_not_load_this_driver</string>
+				<key>Find</key>
+				<string>0x04020000</string>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<string>0x44220000</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Make all drives to be internal</string>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
@@ -274,37 +319,47 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>(c)Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
+				<string>TRIM function for non-Apple SSDs</string>
 				<key>Find</key>
 				<data>
-				Ym9hcmQtaWQ=
+				QVBQTEUgU1NEAA==
 				</data>
 				<key>Name</key>
-				<string>AppleGraphicsDevicePolicy</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				Ym9hcmQtaXg=
+				AAAAAAAAAAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>Port limit increase (RehabMan)</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				g32IDw+DpwQAAA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
 				g32ID5CQkJCQkA==
 				</data>
 			</dict>
 		</array>
+		<key>AppleRTC</key>
+		<true/>
+		<key>Debug</key>
+		<false/>
+		<key>KernelPm</key>
+		<true/>
+		<key>AppleIntelCPUPM</key>
+		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -320,17 +375,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>06/26/2018</string>
+		<string>04/24/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM183.88Z.0161.B00.1806260901</string>
+		<string>IM183.88Z.F000.B00.2004240928</string>
 		<key>Board-ID</key>
 		<string>Mac-77F17D7DA9285301</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02735902GUDJWMJC</string>
+		<string>C02807700QXJ0DXCB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -341,12 +396,14 @@
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>183.0.0.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFC0FE176</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFF1FFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -358,17 +415,19 @@
 		<key>ProductName</key>
 		<string>iMac18,2</string>
 		<key>SerialNumber</key>
-		<string>C12V9*****G5</string>
+		<string>C02YK064J1G5</string>
+		<key>SmUUID</key>
+		<string>64BEC2F2-C2F1-483C-98E8-C8F05800EBD1</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>NvidiaWeb</key>
+		<true/>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
-		<true/>
-		<key>NvidiaWeb</key>
 		<true/>
 	</dict>
 </dict>

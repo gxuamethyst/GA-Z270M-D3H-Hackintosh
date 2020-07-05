@@ -9,11 +9,11 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 * Graphics Card: Gigabyte GeForce GTX 1060 G1 Gaming 3GB
 * RAM: Crucial Ballistix Sport LT (8GB) x 2
 * SSD: Samsung 850 EVO M.2 250GB
-* Monitor: Dell UltraSharp U2518D (2560 x 1440)
+* Monitor: Acer EK241QK (3840 x 2160)
 
 ## OS
 
-* Apple macOS 10.13.6 High Sierra
+* Apple macOS 10.13.6 High Sierra(17G65)
 
 ## BIOS
 
@@ -36,19 +36,20 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 ## Clover
 
-* version r4700, you can download the latest version from [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/).
+* version r5119, you can download the latest version from [Clover EFI bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases).
 
 ## Kexts
 
-* [AppleALC](https://github.com/acidanthera/AppleALC/releases)
-* [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-* [IntelMausiEthernet](https://bitbucket.org/RehabMan/os-x-intel-network/downloads/)
+* [VirtualSMC](https://github.com/acidanthera/virtualsmc/releases)
 * [Lilu](https://github.com/acidanthera/Lilu/releases)
-* [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
+* [IntelMausi](https://github.com/acidanthera/IntelMausi/releases)
+* [AppleALC](https://github.com/acidanthera/AppleALC/releases)
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
-* [XHCI-unsupported](https://github.com/RehabMan/OS-X-USB-Inject-All/archive/master.zip)
 
 ## Others
 
 * [NVIDIA Drivers](https://www.tonymacx86.com/nvidia-drivers/)
-* [one-key-hidpi](https://github.com/boboidream/one-key-hidpi)
+
+## References
+
+* [Hackintosh Vanilla Desktop Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
