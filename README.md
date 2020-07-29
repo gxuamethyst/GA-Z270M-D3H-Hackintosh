@@ -6,14 +6,14 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 * Motherboard: Gigabyte GA-Z270M-D3H
 * CPU: Intel Core i5-7500
-* Graphics Card: Gigabyte GeForce GTX 1060 G1 Gaming 3GB
+* Graphics Card: Sapphire RX560XT 4GB
 * RAM: Crucial Ballistix Sport LT (8GB) x 2
 * SSD: Samsung 850 EVO M.2 250GB
 * Monitor: Acer EK241QK (3840 x 2160)
 
 ## OS
 
-* Apple macOS 10.13.6 High Sierra(17G65)
+* Apple macOS 10.15.6 High Sierra(19G73)
 
 ## BIOS
 
@@ -26,13 +26,16 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 > 4. <u>BIOS</u> → Windows 8/10 Features : *Other OS*
 > 5. <u>BIOS</u> → LAN PXE Boot Option ROM : *Disabled*
 > 6. <u>BIOS</u> → Storage Boot Option Control : *UEFI*
-> 7. <u>Peripherals</u> → Initial Display Output : *IGFX*(for intel gpu) or *PCIe 1 Slot*(for nvidia gpu)
+> 7. <u>Peripherals</u> → Initial Display Output : *IGFX*(for Intel GPU) or *PCIe 1 Slot*(for AMD GPU)
 > 8. <u>Peripherals</u> → Super IO Configuration → Serial Port : *Disabled*
-> 9. <u>Peripherals</u> → Network Stack Configuration → Network Stack : *Disabled*
-> 10. <u>Peripherals</u> → USB Configuration → XHCI Hand-off : *Enabled*
-> 11. <u>Chipset</u> → Vt-d : *Disabled*
-> 12. <u>Chipset</u> → Wake on LAN Enable : *Disabled*
-> 13. Press *F10* to Save and Exit the BIOS
+> 9. <u>Peripherals</u> → Super IO Configuration → Parallel Port : *Disabled*
+> 10. <u>Peripherals</u> → USB Configuration → Legacy USB Support : *Disabled*
+> 11. <u>Peripherals</u> → Network Stack Configuration → Network Stack : *Disabled*
+> 12. <u>Peripherals</u> → USB Configuration → XHCI Hand-off : *Enabled*
+> 13. <u>Power</u> → Platform Power Management : *Disabled*
+> 14. <u>Chipset</u> → Vt-d : *Disabled*
+> 15. <u>Chipset</u> → Wake on LAN Enable : *Disabled*
+> 16. Press *F10* to Save and Exit the BIOS
 
 ## Clover
 
@@ -46,10 +49,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases)
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 
-## Others
-
-* [NVIDIA Drivers](https://www.tonymacx86.com/nvidia-drivers/)
-
 ## References
 
+* [GIGABYTE GA-Z270M-D3H HACKINTOSH BUILD GUIDE](https://hackintosher.com/builds/ga-z270m-d3h/)
 * [Hackintosh Vanilla Desktop Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
