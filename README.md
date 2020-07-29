@@ -13,7 +13,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 ## OS
 
-* Apple macOS 10.15.6 High Sierra(19G73)
+* Apple macOS 10.15.6 Catalina(19G73)
 
 ## BIOS
 
@@ -29,8 +29,8 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 > 7. <u>Peripherals</u> → Initial Display Output : *IGFX*(for Intel GPU) or *PCIe 1 Slot*(for AMD GPU)
 > 8. <u>Peripherals</u> → Super IO Configuration → Serial Port : *Disabled*
 > 9. <u>Peripherals</u> → Super IO Configuration → Parallel Port : *Disabled*
-> 10. <u>Peripherals</u> → USB Configuration → Legacy USB Support : *Disabled*
-> 11. <u>Peripherals</u> → Network Stack Configuration → Network Stack : *Disabled*
+> 10. <u>Peripherals</u> → Network Stack Configuration → Network Stack : *Disabled*
+> 11. <u>Peripherals</u> → USB Configuration → Legacy USB Support : *Disabled*
 > 12. <u>Peripherals</u> → USB Configuration → XHCI Hand-off : *Enabled*
 > 13. <u>Power</u> → Platform Power Management : *Disabled*
 > 14. <u>Chipset</u> → Vt-d : *Disabled*
