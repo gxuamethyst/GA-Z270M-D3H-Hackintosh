@@ -176,7 +176,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -v debug=0x100 keepsyms=1 agdpmod=pikera</string>
+		<string>-v debug=0x100 keepsyms=1</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>XMPDetection</key>
