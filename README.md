@@ -49,6 +49,10 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases)
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 
+## Others
+
+> Note: You need a USB 2.0 Flash Drive for this motherboard. A USB 3.0 Flash Drive will cause a kernel panic when trying to load the installer because the rear ports on this motherboard are all USB 3.1 ports which cannot run 3.0 devices during the installation process on the Z270 Chipset.
+
 ## References
 
 * [GIGABYTE GA-Z270M-D3H HACKINTOSH BUILD GUIDE](https://hackintosher.com/builds/ga-z270m-d3h/)
