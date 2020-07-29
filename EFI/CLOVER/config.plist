@@ -176,7 +176,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -v debug=0x100 keepsyms=1</string>
+		<string>dart=0 -v debug=0x100 keepsyms=1 agdpmod=pikera</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>XMPDetection</key>
@@ -264,7 +264,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Emerald</string>
 		<key>Timezone</key>
 		<integer>8</integer>
 	</dict>
@@ -385,7 +385,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02807700QXJ0DXCB</string>
+		<string>C029052004NJ0DXFB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -415,16 +415,16 @@
 		<key>ProductName</key>
 		<string>iMac18,2</string>
 		<key>SerialNumber</key>
-		<string>C02YK064J1G5</string>
+		<string>C02Y6BZAJ1G5</string>
 		<key>SmUUID</key>
-		<string>64BEC2F2-C2F1-483C-98E8-C8F05800EBD1</string>
+		<string>90A6986A-C093-4B98-A3E5-91438A72597C</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>NvidiaWeb</key>
-		<true/>
+		<false/>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
