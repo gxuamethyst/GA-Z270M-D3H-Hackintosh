@@ -260,7 +260,7 @@
 			<string>BOOTX64.EFI</string>
 		</array>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>3840×2160</string>
 		<key>Theme</key>
 		<string>Emerald</string>
 		<key>Timezone</key>
