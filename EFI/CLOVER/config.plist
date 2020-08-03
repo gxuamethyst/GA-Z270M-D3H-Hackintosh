@@ -262,7 +262,7 @@
 		<key>ScreenResolution</key>
 		<string>3840×2160</string>
 		<key>Theme</key>
-		<string>Emerald</string>
+		<string>embedded</string>
 		<key>Timezone</key>
 		<integer>8</integer>
 	</dict>
