@@ -48,6 +48,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 * [IntelMausi](https://github.com/acidanthera/IntelMausi/releases)
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases)
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
+* USBPorts.kext(custom with [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all), check [https://blog.csdn.net/LeoForBest/article/details/103247824](https://blog.csdn.net/LeoForBest/article/details/103247824))
 
 ## Others
 
@@ -57,3 +58,4 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 * [GIGABYTE GA-Z270M-D3H HACKINTOSH BUILD GUIDE](https://hackintosher.com/builds/ga-z270m-d3h/)
 * [Hackintosh Vanilla Desktop Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
+* [https://blog.csdn.net/LeoForBest/article/details/103247824](https://blog.csdn.net/LeoForBest/article/details/103247824)
