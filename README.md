@@ -13,7 +13,7 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 ## OS
 
-* Apple macOS 10.15.6 Catalina(19G73)
+* Apple macOS 10.15.7 Catalina(19H15)
 
 ## BIOS
 
@@ -40,6 +40,8 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 ## Clover
 
 * version r5119, you can download the latest version from [Clover EFI bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases).
+
+> version r5119 maybe the final version of 'pure clover', suggest to use OpenCore(https://github.com/acidanthera/OpenCorePkg) for the future.
 
 ## Kexts
 
