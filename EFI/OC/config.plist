@@ -48,7 +48,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
-			<false/>
+			<true/>
 			<key>DevirtualiseMmio</key>
 			<false/>
 			<key>DisableSingleUser</key>
@@ -58,7 +58,7 @@
 			<key>DiscardHibernateMap</key>
 			<false/>
 			<key>EnableSafeModeSlide</key>
-			<false/>
+			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
 			<key>ForceExitBootServices</key>
@@ -70,13 +70,13 @@
 			<key>ProtectUefiServices</key>
 			<false/>
 			<key>ProvideCustomSlide</key>
-			<false/>
+			<true/>
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
 			<key>SetupVirtualMap</key>
-			<false/>
+			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
@@ -261,7 +261,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
@@ -479,7 +479,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>SystemMemoryStatus</key>
-			<string></string>
+			<string>Auto</string>
 			<key>MLB</key>
 			<string>C029052004NJ0DXFB</string>
 			<key>ProcessorType</key>
@@ -487,7 +487,7 @@
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
-			<false/>
+			<true/>
 			<key>SystemProductName</key>
 			<string>iMac18,2</string>
 			<key>SystemSerialNumber</key>
