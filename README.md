@@ -1,19 +1,20 @@
-# Clover config for Z270M-D3H hackintosh
+# OpenCore config for Z270M-D3H hackintosh
 
-Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2017/06/EFI-Pack-GA-Z270M-D3H.zip), see [GIGABYTE GA-Z270M-D3H HACKINTOSH BUILD GUIDE](https://hackintosher.com/builds/ga-z270m-d3h/).
+Base generate by [OC-Gen-X](https://github.com/Pavo-IM/OC-Gen-X).
 
 ## Hardware
 
 * Motherboard: Gigabyte GA-Z270M-D3H
 * CPU: Intel Core i5-7500
 * Graphics Card: Sapphire RX560XT 4GB
+> recognized with 'Radeon RX 470 4 GB' in Hackintosh
 * RAM: Crucial Ballistix Sport LT (8GB) x 2
 * SSD: Samsung 850 EVO M.2 250GB
 * Monitor: Acer EK241QK (3840 x 2160)
 
 ## OS
 
-* Apple macOS 10.15.7 Catalina(19H15)
+* Apple macOS Big Sur 11.0.1(20B50)
 
 ## BIOS
 
@@ -37,11 +38,9 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 > 15. <u>Chipset</u> → Wake on LAN Enable : *Disabled*
 > 16. Press *F10* to Save and Exit the BIOS
 
-## Clover
+## OpenCore
 
-* version r5119, you can download the latest version from [Clover EFI bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases).
-
-> version r5119 maybe the final version of 'pure clover', suggest to use OpenCore(https://github.com/acidanthera/OpenCorePkg) for the future.
+* version 0.6.3, you can download the latest version from [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
 
 ## Kexts
 
@@ -56,8 +55,21 @@ Base on [EFI-Pack-GA-Z270M-D3H.zip](http://hackintosher.com/wp-content/uploads/2
 
 > Note: You need a USB 2.0 Flash Drive for this motherboard. A USB 3.0 Flash Drive will cause a kernel panic when trying to load the installer because the rear ports on this motherboard are all USB 3.1 ports which cannot run 3.0 devices during the installation process on the Z270 Chipset.
 
+> migrate from Clover?
+> 
+> check:
+> 
+> https://github.com/dortania/OpenCore-Install-Guide/tree/master/clover-conversion#cleaning-the-clover-junk-in-macos
+> https://blog.skk.moe/post/from-clover-to-opencore/#%E6%B8%85%E7%90%86-Clover-%E6%AE%8B%E4%BD%99
+
 ## References
 
-* [GIGABYTE GA-Z270M-D3H HACKINTOSH BUILD GUIDE](https://hackintosher.com/builds/ga-z270m-d3h/)
-* [Hackintosh Vanilla Desktop Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
-* [https://blog.csdn.net/LeoForBest/article/details/103247824](https://blog.csdn.net/LeoForBest/article/details/103247824)
+* [https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf)
+* [https://oc.skk.moe/](https://oc.skk.moe/)
+* [https://dortania.github.io/OpenCore-Install-Guide/](https://dortania.github.io/OpenCore-Install-Guide/)
+* [https://heipg.cn/tutorial/one-key-opencore-efi.html](https://heipg.cn/tutorial/one-key-opencore-efi.html)
+* [https://heipg.cn/tutorial/example-of-from-clover-to-opencore.html](https://heipg.cn/tutorial/example-of-from-clover-to-opencore.html)
+* [https://blog.skk.moe/post/from-clover-to-opencore/](https://blog.skk.moe/post/from-clover-to-opencore/)
+* [https://blog.daliansky.net/OpenCore-BootLoader.html](https://blog.daliansky.net/OpenCore-BootLoader.html)
+* [https://opencore.slowgeek.com/](https://opencore.slowgeek.com/)
+* [https://github.com/Pavo-IM/OC-Gen-X](https://github.com/Pavo-IM/OC-Gen-X)
