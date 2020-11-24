@@ -60,6 +60,7 @@ Base generate by [OC-Gen-X](https://github.com/Pavo-IM/OC-Gen-X).
 > check:
 > 
 > https://github.com/dortania/OpenCore-Install-Guide/tree/master/clover-conversion#cleaning-the-clover-junk-in-macos
+> 
 > https://blog.skk.moe/post/from-clover-to-opencore/#%E6%B8%85%E7%90%86-Clover-%E6%AE%8B%E4%BD%99
 
 ## References
