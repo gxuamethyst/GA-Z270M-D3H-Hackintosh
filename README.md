@@ -1,20 +1,20 @@
 # OpenCore config for Z270M-D3H hackintosh
 
-Base generate by [OC-Gen-X](https://github.com/Pavo-IM/OC-Gen-X).
+Base generate by [OC-Gen-X(version 2.9.7)](https://github.com/Pavo-IM/OC-Gen-X).
 
 ## Hardware
 
 * Motherboard: Gigabyte GA-Z270M-D3H
 * CPU: Intel Core i5-7500
 * Graphics Card: Sapphire RX560XT 4GB
-> recognized with 'Radeon RX 470 4 GB' in Hackintosh
+> Will recognized with 'Radeon RX 470 4 GB' in Hackintosh.
 * RAM: Crucial Ballistix Sport LT (8GB) x 2
 * SSD: Samsung 850 EVO M.2 250GB
 * Monitor: Acer EK241QK (3840 x 2160)
 
 ## OS
 
-* Apple macOS Big Sur 11.0.1(20B50)
+* Apple macOS Big Sur 11.2.3 (20D91)
 
 ## BIOS
 
@@ -40,7 +40,7 @@ Base generate by [OC-Gen-X](https://github.com/Pavo-IM/OC-Gen-X).
 
 ## OpenCore
 
-* version 0.6.3, you can download the latest version from [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
+* version 0.6.7, you can download the latest version from [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
 
 ## Kexts
 
